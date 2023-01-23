@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="watchBody">
+    <div id = "stopwatch" style="display: flex; flex-direction: row; font-size:40">
+    
+    
+    <div id = "min">
+    </div>
+    :
+    <div id = "seconds">
+    </div>
+    :
+    <div id = "mili">
+    </div>
+    </div>
+    <div id = "laps">
+    </div>
+
+    <div id="buttons">
+    <button id="stopstart" value = "start" style = "padding : 20px" >START</button>
+    <button id="lap" value = "start" style = "padding : 20px" >LAP</button>
+    </div>
+    </div>
+    <script>
+      
+      let min = 0;
+      let sec = 0;
+      let mili = 0;
+      let id = 0;
+      let state = "START";
+      let stopStart = document.getElementById("stopstart");
+      let lap = document.getElementById("lap");
+      let minDiv = document.getElementById("min");
+      let secDiv = document.getElementById("seconds");
+      let miliDiv = document.getElementById("mili");
+      let laps = document.getElementById("laps");
+
+      stopStart.addEventListener("click",function(){
+
+        if(stopstart.innerHTML == "START"){
+           min = 0;
+          sec = 0;
+          mili = 0;
+          stopstart.innerHTML = "STOP";
+          clearInterval(id);
+          id = setInterval(watch,10);
+        }
+        else{
+          
+          stopstart.innerHTML="START";
+          clearInterval(id);
+        }
+        
+        
+      });
+
+
+      lap.addEventListener("click",function(){
+          let currentMIN = document.getElementById("min").innerHTML;
+          let currentSEC = document.getElementById("seconds").innerHTML;
+          let currentMILI = document.getElementById("mili").innerHTML;
+          console.log(currentMILI);
+          let newDiv = document.createElement("div");
+          let str = currentMIN + ":" + currentSEC + ":" + currentMILI;
+          newDiv.innerHTML = str;
+          newDiv.setAttribute("style","font-size:20;")
+          laps.appendChild(newDiv);
+
+      })
+
+      
+      function watch(){
+        mili++;
+        if(mili == 100){
+          sec++;
+          mili=0;
+        }
+
+        if(sec == 60){
+          min ++;
+          sec = 0;
+        }
+      
+
+       
+        minDiv.innerHTML = String(min).padStart(2,"0");
+        secDiv.innerHTML = String(sec).padStart(2,"0");
+        miliDiv.innerHTML = mili;
+
+        
+        
+      }
+      
+      </script>
+
+  </body>
+</html>
+

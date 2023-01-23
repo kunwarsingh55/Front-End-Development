@@ -1,0 +1,38 @@
+<div id="root"></div>
+
+
+<script>
+  var root = document.getElementById("root");
+  
+  let main = document.createElement("div");
+  request = new XMLHttpRequest();
+  request.open("GET","https://jsonplaceholder.typicode.com/posts")
+  request.send();
+  request.addEventListener("load", function(){
+  let posts = JSON.parse(request.responseText);
+  addTODom(posts);
+})
+
+
+function addTODom(posts){
+  //console.log(posts);
+
+  posts.forEach(function(post){
+  let titlDiv = document.createElement("div");
+  
+  let bodyDiv = document.createElement("div");
+  titlDiv.innerHTML = post.title;
+  titlDiv.innerHTML = "----------------TITLE---------------";
+   bodyDiv.innerHTML = post.body;
+  
+ 
+
+  main.appendChild(titlDiv);
+  main.appendChild(bodyDiv);
+  
+  })
+
+  root.appendChild(main);
+}
+
+</script>

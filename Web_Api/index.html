@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <title>GitHub Api</title>
+ 
+</head>
+
+<body>
+  Api Sample
+  <div id="d1">
+    <form id="getUsernameForm" onsubmit="handelSubmit(event)">
+      <input type="text" placeholder="GitHub Username" id="username" name="username" />
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <div id="d2">
+    <span id="usernameText">USER NAME</span>
+
+    <div id="info">
+      <div id="avatar">
+        <img id = "avt" src="https://avatars.githubusercontent.com/u/23284195?v=4" height="130" width="130"/>
+      </div>
+      <div id="userInfo">
+        Repo:
+        <span id="rCount">12</span>
+      </div>
+    </div>
+
+    <div id="repos">
+      ALL REPOS
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

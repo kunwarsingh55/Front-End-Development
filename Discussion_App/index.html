@@ -1,0 +1,44 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css"/>
+  <title>
+    Discussion App
+  </title>
+</head>
+
+<body>
+<div id="header">
+  Discussion Portal
+</div>
+
+<div id = "main">
+
+<div id="left">
+  <div id="submitQuestion">
+    <button type="button" id="newQuestion" onClick = "showQuestionForm()" value="New Question Form">New Question Form</button>
+    <input type="text" id = "search" value="Search Questions..."/>
+  </div>
+ 
+</div>
+
+<div id = "right">
+  <div id = "welcome">
+    <h1>Welcome to Discussion Portal !</h1>
+    Enter a subject and question to get started.</br>
+    <input type="text" id = "subject" value = "Subject"/></br>
+    <textarea id="question" value = "Question">Question</textarea>
+    <div id="questionSubmitButton">
+    <button type="button" onClick="addQuestion()" id="submitButton" value="submit">Submit</button>
+  </div>
+  </div>
+  
+</div>
+
+
+
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <title>
+      Pomodoro Clock
+    </title>
+  </head>
+
+  <body id="grad">
+
+  <div id="main">
+
+  <div id="progress">
+    <div id="currenTime">
+      00:00
+    </div>
+  </div>
+    <div id="status">
+      Session 1
+    </div>
+
+    <div id ="timeSelector">
+      <div id="sessionSelector">
+        Session Time
+        <span id="sessionSelectorDisplay">0 Min</span>
+        <div>
+          <button id="plusSession"  onclick="incSession()" value="+">+</button>
+          <button id="minusSession" onclick="decSession()" value="+">-</button>
+        </div>
+      </div>
+      <div id="breakSelector">
+        Break Time
+        <span id="breakSelectorDisplay">0 Min</span>
+        <div>
+          <button id="plusBreak"  onclick="incBreak()" value="+">+</button>
+          <button id="minusBreak" onclick="decBreak()" value="+">-</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="controlButtons">
+      <button id="StartStop" onclick="startSession()" value="+">Start</button>
+      <button id="Reset" onClick="resetClock()" value="reset">Reset</button>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,130 @@
+#timeSelector{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px dotted hsl(20deg 5% 53%);
+    width: 80%;
+  }
+  #sessionSelector{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #breakSelector{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #grad {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, hsl(34deg 70% 72%), hsl(25deg 61% 62%));
+  }
+  
+  #main{
+    background: #00000093;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 12px #00000070;
+    padding: 20px;
+  }
+  
+  #currenTime{
+    color: hsl(185deg 100% 35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    font-size: 40px;
+    font-family: Tahoma, sans-serif;
+  }
+  #progress{
+  color: hsl(185deg 100% 35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54%;
+    width: 64%;
+    background-color: rgb(121, 121, 121);
+    font-size: 30px;
+    font-family: Tahoma, sans-serif;
+  }
+  
+  
+  #status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+    width: 80%;
+    color: white;
+    font-size: 40px;
+    font-family: Tahoma, sans-serif;
+    border-bottom: 2px dotted hsl(20deg 5% 53%);
+  }
+  
+  #sessionSelector , #breakSelector{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+  
+  }
+  #controlButtons{
+    padding: 20px;
+  }
+  
+  #plusSession, #minusSession, #plusBreak, #minusBreak{
+    background-color: hsl(26deg 14% 10%);
+    color: white;
+    border: none;
+    padding: 3px 15px;
+    border-radius: 5px;
+  }
+  
+  #StartStop, #Reset{
+    background-color: hsl(26deg 14% 10%);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+  
+  #sessionSelectorDisplay{
+    margin: 5px;
+    color: hsl(184deg 70% 31%);
+    font-size: 20px;
+  }
+  #breakSelectorDisplay{
+    margin: 5px;
+    color: hsl(14deg 64% 54%);
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

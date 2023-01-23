@@ -1,0 +1,28 @@
+body{
+    color: white;
+    background-color: #0f0f0f;
+  }
+  #watchBody{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #buttons{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #stopstart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:#351614;
+  }

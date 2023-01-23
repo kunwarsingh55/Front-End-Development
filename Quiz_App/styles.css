@@ -1,0 +1,34 @@
+#quizheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 102, 102);
+    color: white;
+    height: 10%;
+    width: 100%;
+    
+  }
+  
+  #main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    height: 100%;
+  }
+  
+  #questionArea{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    background-color: white;
+    height: 50%;
+    width: 70%;
+    border-radius: 5px;
+  }
+  
+  #options{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
